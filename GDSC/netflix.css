@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0; 
+
+}
+
+.background {
+    animation: bk 3.5s;
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/ea44b42b-ba19-4f35-ad27-45090e34a897/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+
+}
+
+.txt {
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 12vmin;
+  font-weight: 700;
+  animation: netflix_style 3.5s;
+  outline: none;
+  color: #e90418;
+  position: relative;
+  z-index: 2; 
+  opacity: 1;
+  text-align: left ;
+  font-size: 60px;  
+  padding-left: 150px;
+  
+}
+
+.headd{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+}
+
+select{
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+    margin-left: 700px;
+    padding: 5px;
+    border-radius: 5px;
+        background-color: transparent;
+        border: 2px solid #79818a; 
+        color: #bfd4ea; 
+        cursor: pointer; 
+}
+.mid{
+    margin-top: 150px;
+    margin-left: 190px;
+    position: relative;
+    z-index: 2;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-family:Poppins;
+   
+}
+
+h2{
+    color: white;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 650;
+    font-family:Poppins;    
+    margin-left:100px ;
+}
+
+input{
+    margin-top: 20px;
+    width: 300px;
+    height: 60px   ;
+    margin-left: 240px;
+    border-radius: 5px;
+        background-color: transparent;
+        border: 2px solid #929ca7; /* Add border for visibility */
+        color: #c2e0ff; /* Text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+}
+button{
+    margin-top: 20px;
+    width: 200px;
+    height: 60px   ;
+   font-size: 20px;
+   font-weight: 700;
+   margin-left: 10px;
+   background-color: #e90418;
+    border: none;
+    color: white ;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#blah{
+    margin-left: 350px;
+}
+
+#sign{
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    background-color: #e90418;
+    border: none;
+    color: white ;
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+    border-bottom: none;
+}
+

@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------*/
+.background {
+    animation: bk 3.5s;
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/ea44b42b-ba19-4f35-ad27-45090e34a897/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+
+}
+
+    
+
+
+
+.main{
+    margin: 3% 32%;
+    background-color: #9f030393;
+    color : #ffd1d1;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;   
+    border-radius: 10px;
+    transition: 0.25s;
+    text-shadow: 0px 0px 0px #151515;
+    position: relative;
+    z-index: 2;
+    font-family:Poppins;
+}
+input{
+    width: 300PX ;
+    position: relative;
+    z-index: 2;   
+}
+p{
+    opacity: 0.7;
+    font-size: smaller;
+    position: relative;
+    z-index: 2;
+}
+.sub{ 
+    padding:30px 100px 0 0px;
+    font-size: 20px; 
+    position: relative;
+    z-index: 2;
+}
+
+#h{
+    padding-top: 10px;
+    font-family:Poppins;
+    font-size: 40px;
+    margin-bottom: 20PX;
+    text-shadow: 1px 1px 1px #6c3369;
+    position: relative;
+    z-index: 2;
+}
+
+.main:hover,.main:focus{
+    box-shadow:10px 10px 15px #ff9c9c;
+    transform: translateY(-0.25em);
+    position: relative;
+    z-index: 2;
+
+}
+
+button{
+    padding: 7px 15px;
+    margin: 20px 324px 0px 0px;
+    text-decoration: none   ;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    border: none;
+    }       
+button:hover{
+    background-color: #ff0000;
+    color: #dee2ce;
+    position: relative;
+    z-index: 2;
+}
+.kak{
+    font-family:Poppins;
+    margin : 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration:none;
+    background-color: white;
+    color: #442f41;
+    box-shadow: 2px 2px 2px #341739;
+    position: relative;
+    z-index: 2;
+
+}
+.kak:hover{
+    background-color: #ff0000;
+    color: #dee2ce; 
+    position: relative;
+    z-index: 2;
+}
+
+svg{
+    margin-right: 30px;
+    color: #d6cffd;
+    position: relative;
+    z-index: 2;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
+
+.txt {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12vmin;
+  font-weight: 700;
+  animation: netflix_style 3.5s ;
+  outline: none;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+  color: #e90418;
+}
+
+@keyframes netflix_style {
+  0% {
+    text-shadow: 0px 0px transparent, 1px 1px #aaa, 2px 2px #aaa, 3px 3px #aaa, 4px 4px #aaa, 5px 5px #aaa, 6px 6px #aaa, 7px 7px #aaa, 8px 8px #aaa, 9px 9px #aaa, 10px 10px #aaa;
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  10% {
+    text-shadow: 0px 0px transparent, 1px 1.5px #aaa, 2px 3px #aaa, 3px 4.5px #aaa, 4px 6px #aaa, 5px 7.5px #aaa, 6px 9px #aaa, 7px 10.5px #aaa, 8px 12px #aaa, 9px 13.5px #aaa, 10px 15px #aaa;
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  15% {
+    color: #f3f3f3;
+  }
+  20% {
+    color: #e90418;
+    text-shadow: none;
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+
+
